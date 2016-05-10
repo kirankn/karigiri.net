@@ -648,19 +648,19 @@ h6 {
 }
 
     @media (min-width: 768px) {
-        #main-content .feature-text { font-size:1.18em; }
-        #main-content .feature-text h1 { font-size:2.25em; }
-        #main-content .feature-text h2 { font-size:1.9em; }
-        #main-content .feature-text h3 { font-size:1.65em; }
-        #main-content .feature-text h4 { font-size:1.35em; }
-        #main-content .feature-text h5 { font-size:1.22em; }
-        #main-content .feature-text h6 { font-size:1.1em; }
+        #main-content .feature-text { font-size:0.98em; }
+        #main-content .feature-text h1 { font-size:2.0em; }
+        #main-content .feature-text h2 { font-size:1.7em; }
+        #main-content .feature-text h3 { font-size:1.45em; }
+        #main-content .feature-text h4 { font-size:1.25em; }
+        #main-content .feature-text h5 { font-size:1.12em; }
+        #main-content .feature-text h6 { font-size:1.02em; }
         #main-content .feature-text .btn-lg { font-size:0.7em; }
         #main-content .feature-text .btn-sm { font-size:0.58em; }
         #main-content .feature-text .btn-xs { font-size:0.43em; }        
     }
     @media (min-width: 992px) {
-        #main-content .feature-text { font-size:1.44em; }   
+        #main-content .feature-text { font-size:1.01em; }   
     }
     @media (min-width: 1200px) {
 
