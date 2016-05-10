@@ -117,6 +117,15 @@ p {
     text-align: right !important;
 }
 
+.kkn-footer {
+    color: gray;
+    font-size: 0.8em !important; 
+}
+
+.kkn-carousel {
+    margin-left: 10% !important;
+}
+
 
 /* ====================================================
    PAGE BACKGROUND AND OUTER CONTAINERS
