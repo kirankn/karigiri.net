@@ -648,19 +648,19 @@ h6 {
 }
 
     @media (min-width: 768px) {
-        #main-content .feature-text { font-size:0.98em; }
-        #main-content .feature-text h1 { font-size:2.0em; }
-        #main-content .feature-text h2 { font-size:1.7em; }
-        #main-content .feature-text h3 { font-size:1.45em; }
-        #main-content .feature-text h4 { font-size:1.25em; }
-        #main-content .feature-text h5 { font-size:1.12em; }
-        #main-content .feature-text h6 { font-size:1.02em; }
+        #main-content .feature-text { font-size:0.8em; }
+        #main-content .feature-text h1 { font-size:1.8em; }
+        #main-content .feature-text h2 { font-size:1.5em; }
+        #main-content .feature-text h3 { font-size:1.35em; }
+        #main-content .feature-text h4 { font-size:1.15em; }
+        #main-content .feature-text h5 { font-size:1.02em; }
+        #main-content .feature-text h6 { font-size:0.9em; }
         #main-content .feature-text .btn-lg { font-size:0.7em; }
-        #main-content .feature-text .btn-sm { font-size:0.58em; }
-        #main-content .feature-text .btn-xs { font-size:0.43em; }        
+        #main-content .feature-text .btn-sm { font-size:0.6em; }
+        #main-content .feature-text .btn-xs { font-size:0.5em; }        
     }
     @media (min-width: 992px) {
-        #main-content .feature-text { font-size:1.01em; }   
+        #main-content .feature-text { font-size:0.9em; }   
     }
     @media (min-width: 1200px) {
 
