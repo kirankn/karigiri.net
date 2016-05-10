@@ -440,7 +440,7 @@ p {
     @media (min-width: 992px) {
         #footer {
             /* have to match with #left-sidebar rules above */
-            left:6.5%;  
+            left:8%;  
             max-width:205px;
             min-width:190px; 
         }   
