@@ -40,8 +40,8 @@
         mp=MD5(pw);
         console.log(pw, mp);
         console.log(ps.indexOf(mp) > -1);
-        if(ps.indexOf(mp) > -1) window.location = '/tree'+mp;
-        else window.location = '/';
+        if(ps.indexOf(mp) > -1) window.location.href = '/tree'+mp;
+        else window.location.href = '/';
         return false;
       }
     </script>
