@@ -34,14 +34,10 @@
 
     <script type="text/javascript" src="assets/js/md5.js"></script>
     <script type="text/javascript">
-      var ps = ['07b5d21f471363b7472cb39647d8a332','f3c855e6caf7da64173ddd0f8c778b47'];
       function chk(){
         pw=prompt('Please enter the family password to view this page!',' ');
         mp=MD5(pw);
-        console.log(pw, mp);
-        console.log(ps.indexOf(mp) > -1);
-        if(ps.indexOf(mp) > -1) window.location.href = '/tree'+mp;
-        //if(ps.indexOf(mp) > -1) window.location.replace('/tree'+mp);
+        if(mp.indexOf('472cb3') > -1 || mp.indexOf('5e6caf') > -1) window.location.href = '/tree'+mp;
         else window.location.href = '/';
         e.preventDefault();
         e.stopPropagation();
