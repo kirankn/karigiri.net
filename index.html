@@ -32,6 +32,19 @@
       <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
     <![endif]-->
 
+    <script type="text/javascript" src="assets/js/md5.js"></script>
+    <script type="text/javascript">
+      var op = '07b5d21f471363b7472cb39647d8a332';
+      function chk1(){
+        pw=prompt('Please enter the family password to view this page!',' ');
+        window.location = (MD5(pw)===op)?'/tree1':'/';
+      }
+      function chk2(){
+        pw=prompt('Please enter the family password to view this page!',' ');
+        window.location = (MD5(pw)===op)?'/tree2':'/';
+      }
+    </script>
+
     <script>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -84,6 +97,8 @@
           <li id="menu-item-intro" class="menu-item scroll kkn"><a href="#intro">Home</a></li>
           <li id="menu-item-about" class="menu-item scroll"><a href="#about">About</a></li>
           <li id="menu-item-eventsnews" class="menu-item scroll"><a href="#carousel">Events/News</a></li>
+          <li id="menu-item-family1" class="menu-item scroll"><a href="javascript:chk1();">Family Tree View 1</a></li>
+          <li id="menu-item-family1" class="menu-item scroll"><a href="javascript:chk2();">Family Tree View 2</a></li>
           <li id="menu-item-contact" class="menu-item scroll"><a href="#contact">Contact</a></li>
           <!-- to include a link which doesn't scroll to a section inside the page, remove the .scroll class from the <li> - example below -->
           <!-- <li id="menu-item-alt-page" class="menu-item"><a href="http://www.link.com">Outer Link</a></li> -->
