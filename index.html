@@ -26,11 +26,12 @@
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
       <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
     <![endif]-->
-    <script type="text/javascript" src="assets/js/md5.js"></script>
+    <script type="text/javascript" src="assets/js/amd5.js"></script>
     <script type="text/javascript">
     function chk() {
         pw = prompt('Please enter the family password to view this page!', ' ');
-        mp = MD5(pw);
+        //mp = MD5(pw);
+        mp = md5(pw);
         if (mp.indexOf('472cb3') > -1 || mp.indexOf('5e6caf') > -1 || mp.indexOf('dcaad77') > -1 || mp.indexOf('90f00660') > -1) window.location.href = '/tree' + mp;
         //else window.location.href = '/';
         e.preventDefault();
