@@ -113,8 +113,14 @@ p {
     opacity: 100 !important;
 }
 
+.tacenter {
+    text-align: center !important;
+}
 .taright {
     text-align: right !important;
+}
+.taleft {
+    text-align: left !important;
 }
 
 .kkn-footer {
