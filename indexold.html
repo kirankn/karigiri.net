@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>karigiri.net family website </title>
+    <!-- Bootstrap core CSS -->
+    <link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap theme -->
+    <link href="assets/bootstrap/css/bootstrap-theme.min.css" rel="stylesheet">
+    <!-- owl carousel css -->
+    <link href="assets/js/owl-carousel/owl.carousel.css" rel="stylesheet">
+    <link href="assets/js/owl-carousel/owl.theme.css" rel="stylesheet">
+    <link href="assets/js/owl-carousel/owl.transitions.css" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="assets/css/styles.css" rel="stylesheet">
+    <link href="assets/images/other_images/logo.png" rel="image_src" />
+    <link rel="icon" type="image/png" href="assets/images/other_images/icon.png">
+    <meta name="description" content="karigiri.net is a family website which aims at bringing together the descendants of Sri. Karigirappa of Gubbi, Tumkur District, Karnataka, INDIA." />
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+    <script type="text/javascript" src="assets/js/amd5.js"></script>
+    <script type="text/javascript">
+    function chk() {
+        pw = prompt('Please enter the family password to view this page!', ' ');
+        //mp = MD5(pw);
+        mp = md5(pw);
+        if (mp.indexOf('472cb3') > -1 || mp.indexOf('5e6caf') > -1 || mp.indexOf('dcaad77') > -1 || mp.indexOf('90f00660') > -1) window.location.href = '/tree' + mp;
+        //else window.location.href = '/';
+        e.preventDefault();
+        e.stopPropagation();
+        return false;
+    }
+    </script>
+    <script>
+    (function(i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r;
+        i[r] = i[r] || function() {
+            (i[r].q = i[r].q || []).push(arguments)
+        }, i[r].l = 1 * new Date();
+        a = s.createElement(o),
+            m = s.getElementsByTagName(o)[0];
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+    ga('create', 'UA-77544756-1', 'auto');
+    ga('send', 'pageview');
+    </script>
+    <style type="text/css">
+    
+    th,
+    td {
+        margin: 0;
+        text-align: center;
+        border-collapse: collapse;
+        outline: 1px solid #e3e3e3;
+    }
+    
+    td {
+        padding: 20px 10px;
+    }
+    
+    th {
+        background: #666;
+        color: white;
+        padding: 20px 10px;
+        font-size:0.9em;
+    }
+    
+    </style>
+    
+    <script type="text/javascript" src="//ht-kknkg.tera.carouselads.media/js/carads_kknkarigiri.js" async></script>
+    <script type="text/javascript" src="//ht-hovkg.hoverr.media/js/tera_hovkarigiri.js" async></script>
+    
+</head>
+
+<body>
+    <!-- background image overlay (semi transparent dark background image overlay) -->
+    <!-- comment or remove if you don't want the overlay on top of the image -->
+    <div class="background-image-overlay"></div>
+    <!-- outer background container - the element from where the default page background image is set, and the element which changes its background when scrolling through other sections (.section-wrapoer) that have attribute "data-custom-background-img" set. 
+     - data-default-background-img attr is required for sections (.section-wrapper) below that have no custom background defined.
+     - use same image in the backstretch.js code in the footer for IE8 or less browsers -->
+    <div id="outer-background-container" data-default-background-img="assets/images/other_images/bg5.jpg" style="background-image:url(assets/images/other_images/bg5.jpg);"></div>
+    <!-- end: #outer-background-container -->
+    <!-- Outer Container -->
+    <div id="outer-container">
+        <!-- Left Sidebar -->
+        <section id="left-sidebar">
+            <!-- ==================================================================
+        LOGO 
+        ==================================================================  -->
+            <!-- change the img src to your logo -->
+            <div class="logo">
+                <a href="#intro" class="link-scroll"><img src="assets/images/other_images/logo.png" alt="karigiri.net"></a>
+            </div>
+            <!-- .logo -->
+            <!-- ==================== END: LOGO ==================== -->
+            <!-- Menu Icon for smaller viewports -->
+            <div id="mobile-menu-icon" class="visible-xs" onClick="toggle_main_menu();"><span class="glyphicon glyphicon-th"></span></div>
+            <!-- ==================================================================
+        MAIN MENU 
+        ==================================================================  -->
+            <!-- Each menu item links to a section (<article class="section-wrapper...") in the main content below.
+             - set each <li> id to this format: "menu-item-[the id of the .section-wrapper to link to]".
+             - set href of each <a> to the id of the .section-wrapper to link to -->
+            <ul id="main-menu">
+                <li id="menu-item-intro" class="menu-item scroll kkn"><a href="#intro">Home</a></li>
+                <li id="menu-item-about" class="menu-item scroll"><a href="#about">About</a></li>
+                <li id="menu-item-event" class="menu-item scroll"><a href="#event">Events & News</a></li>
+                <li id="menu-item-family" class="menu-item"><a href="javascript:chk();">Family Tree</a></li>
+                <li id="menu-item-blog" class="menu-item"><a href="http://blog.karigiri.net">Blog</a></li>
+                <li id="menu-item-contact" class="menu-item scroll"><a href="#contact">Contact</a></li>
+                <!-- to include a link which doesn't scroll to a section inside the page, remove the .scroll class from the <li> - example below -->
+                <!-- <li id="menu-item-alt-page" class="menu-item"><a href="http://www.link.com">Outer Link</a></li> -->
+            </ul>
+            <!-- #main-menu -->
+            <!-- ==================== END: MAIN MENU ==================== -->
+        </section>
+        <!-- #left-sidebar -->
+        <!-- end: Left Sidebar -->
+        <!-- ==================================================================
+      MAIN CONTENT
+      ==================================================================  -->
+        <!-- all the website sections are contained in the <article> tag with class ".section-wrapper" and a unique id.
+           - to edit / remove / create website sections, you have to handle the content contained in these <article> tags -->
+        <section id="main-content" class="clearfix">
+            <!-- ==================== SECTION TYPE: Intro Text ==================== -->
+            <!-- This type of section should contain heading and intro paragraph. It can also include links to other sections -->
+            <!-- FOR EACH SECTION <article class="section-wrapper".. :
+             - remember to use a unique id, 
+             - (optional) set a "data-custom-background-img" attribute with a link to custom background image which will be used when the viewer scrolls to this section -->
+            <article id="intro" class="section-wrapper clearfix" data-custom-background-img="assets/images/other_images/bg5.jpg">
+                <div class="content-wrapper clearfix tacenter">
+                    <div class="col-sm-10 col-md-10 pull-right">
+                        <!-- Start: Section content to edit -->
+                        <!-- <p> text in .feature-text is larger  -->
+                        <section class="feature-text">
+                            <h4></h4>
+                            <p>ಕರ್ನಾಟಕ ರಾಜ್ಯ, ತುಮಕೂರು ಜಿಲ್ಲೆ, ಗುಬ್ಬಿಯ ಶ್ರೀ ಕರಿಗಿರಪ್ಪನವರ ವಂಶಸ್ಥರು ಕಾಲಕ್ರಮದಲ್ಲಿ ಪ್ರಪಂಚದ ವಿವಿಧ ಪ್ರದೇಶಗಳಲ್ಲಿ ವಾಸವಾಗಿರುತ್ತಾರೆ. ಇವರು ಉಲುಚುಕಮ್ಮೆ ಪಂಗಡಕ್ಕೆ ಸೇರಿದವರಾಗಿದ್ದು ರಥೀತರಸಗೋತ್ರದವರಾಗಿರುತ್ತಾರೆ ಹಾಗೂ ಮನೆದೇವರಾದ ದೇವರಾಯನದುರ್ಗದ ಶ್ರೀ ಲಕ್ಷ್ಮೀ ನರಸಿಂಹಸ್ವಾಮಿಯನ್ನು ಪೂಜಿಸುತ್ತಾರೆ. </p>
+                            <p>ಈ ವಂಶಸ್ಥರನ್ನು ಒಟ್ಟುಗೂಡಿಸುವುದು ನಮ್ಮ ಗುರಿ.</p>
+                            <p>Over time, the descendants of Sri Karigirappa from Gubbi (Tumkur district, Karnataka, INDIA) have settled across the world. This family belongs to the Uluchukamme Brahmin sect (Rathitarasa Gotra) and the family deity is Sri Lakshmi Narasimha Swamy at Devarayanadurga. </p>
+                            <p>Our aim is to bring this family together again. </p>
+                            
+                        </section>
+                        <!-- End: Section content to edit -->
+                    </div>
+                    <!-- .col-sm-10 -->
+                </div>
+                <!-- .content-wrapper -->
+            </article>
+            <!-- .section-wrapper -->
+            <!-- ==================== END: SECTION TYPE: Intro Text ==================== -->
+            <!-- ==================== SECTION TYPE: Text / Generic ==================== -->
+            <!-- This type of section should contain generic content (text, image, etc) -->
+            <!-- FOR EACH SECTION <article class="section-wrapper".. :
+             - remember to use a unique id, 
+             - (optional) set a "data-custom-background-img" attribute with a link to custom background image which will be used when the viewer scrolls to this section -->
+            <article id="about" class="section-wrapper clearfix" data-custom-background-img="assets/images/other_images/bg7.jpg">
+                <div class="content-wrapper clearfix tacenter">
+                    <div class="col-sm-10 col-md-10 pull-right">
+                        <!-- Start: Section content to edit -->
+                        <h3 class="section-title">ನಮ್ಮ ಬಗ್ಗೆ</h3>
+                        <p class="feature-paragraph">
+                            ಗುಬ್ಬಿಯಲ್ಲೆ ನೆಲೆ ನಿಂತ ಕರಿಗಿರಪ್ಪನವರ ವಂಶ ಈಗ ಸುಮಾರು ಏಳು ತಲೆಮಾರುಗಳ ವಂಶಾಭಿವೃದ್ಧಿಯನ್ನು ಕಂಡಿದೆ. ಈ ವಂಶಸ್ಥರೆಲ್ಲ ಇತರ ವಂಶದವರಂತೆಯೇ ಅನೇಕ ಕಷ್ಟ ಸುಖಗಳನ್ನು ಕಂಡ ವಂಶವಾಗಿದೆ. ಇಪ್ಪತ್ತನೆಯ ಶತಮಾನದ ಆದಿಭಾಗದಲ್ಲಿ ಹಬ್ಬಿದ ಇನ್ಫ್ಲುಎಂಜ಼ ಜ್ವರದಿಂದ ನಮ್ಮ ವಂಶದವರಲ್ಲಿಯೂ ಅನೇಕರು ಅಕಾಲ ಮರಣವನ್ನು ಹೊಂದಿದರು. ಅದು ನಮ್ಮ ವಂಶದವರಲ್ಲಿ ಅನೇಕರಿಗೆ ಬಹಳ ಕಷ್ಟಕರ ಸನ್ನಿವೇಶಗಳನ್ನು ತಂದೊಡ್ಡಿತು. ಆದರೆ ಕರಿಗಿರಪ್ಪನವರ ವಂಶಸ್ಥರು ಎಲ್ಲ ಕಷ್ಟಗಳನ್ನು ಎದುರಿಸಿ ನಿಂತು ಜೀವನದಲ್ಲಿ ಪ್ರಗತಿಯನ್ನು ಸಾಧಿಸಿದ್ದಾರೆ ಎನ್ನುವುದು ಬಹಳ ಸಂತೋಷದ ವಿಷಯ. ಅನೇಕರು ಸಮಾಜದ ಪ್ರತಿಷ್ಠಿತ ಹುದ್ದೆಗಳನ್ನು ಅಲಂಕರಿಸಿರುವ ಉದಾಹರಣೆಗಳಿವೆ. ಸಮಾಜಸೇವೆಗೆ ತೊಡಗಿಕೊಂಡಿರುವವವರು ಅನೇಕರಿದ್ದಾರೆ. ವಿವಿಧ ಬಗೆಯ ಪ್ರತಿಭೆಗಳು ನಮ್ಮ ವಂಶದವರಲ್ಲಿ ಕಂಡು ಬರುತ್ತದೆ.
+                        </p>
+
+                        <p class="feature-paragraph">
+                            ಆದರೆ ನಮ್ಮಲ್ಲಿ ಅನೇಕರಿಗೆ ಪರಸ್ಪರ ಪರಿಚಯವಿಲ್ಲ. ನಮ್ಮವರು ಎಂದು ತಿಳಿದಿಲ್ಲ. ವಂಶಸ್ಥರೆಲ್ಲರು ನಿಧಾನಕ್ಕೆ ದೂರ ಸರಿಯುತ್ತಿದ್ದಾರೆಯೋ ಎನ್ನುವ ಅನುಭವವಾಗುತ್ತಿದೆ. ಈ ನಿಟ್ಟಿನಲ್ಲಿ ನಾವೆಲ್ಲ ಒಗ್ಗೂಡಿ ಹೇಗೆ ಈ ಬಾಂಧವ್ಯವನ್ನು ಉಳಿಸಬೇಕು ಹಾಗೂ ಬೆಳಸಬೇಕು ಎಂಬ ಬಗ್ಗೆ ಚಿಂತನೆ / ಚರ್ಚೆ ನಡೆಸಬೇಕಾಗಿದೆ. 
+                        </p>
+
+                        <p class="feature-paragraph">
+                            ಈ ಸಂಬಂಧ, ಇದೇ ಮೇ 22-23 ರಂದು ಈ ವಂಶದ ಸದಸ್ಯರೆಲ್ಲರಿಗಾಗಿ ದೇವರಾಯನದುರ್ಗದಲ್ಲಿ ಒಂದು ಸಮಾವೇಶವನ್ನು ಏರ್ಪಡಿಸಲಾಗಿದೆ. ಎಲ್ಲರೂ ತಪ್ಪದೆ ಭಾಗವಹಿಸಬೇಕಾಗಿ ಕೋರಿಕೆ.
+                        </p>
+                       
+                    </div>
+                    <!-- .col-sm-10 -->
+                </div>
+                <!-- .content-wrapper -->
+            </article>
+            <!-- .section-wrapper -->
+            <!-- ==================== END: SECTION TYPE: Text / Generic ==================== -->
+            <!-- ==================== SECTION TYPE: Text / Generic ==================== -->
+            <!-- This type of section should contain generic content (text, image, etc) -->
+            <!-- FOR EACH SECTION <article class="section-wrapper".. :
+             - remember to use a unique id, 
+             - (optional) set a "data-custom-background-img" attribute with a link to custom background image which will be used when the viewer scrolls to this section -->
+            <article id="event" class="section-wrapper clearfix" data-custom-background-img="assets/images/other_images/bg1.jpg">
+                <div class="content-wrapper clearfix">
+                    <div class="col-sm-10 col-md-10 pull-right">
+                        <!-- Start: Section content to edit -->
+                        <h3 class="section-title tacenter">ಸದ್ಯದಲ್ಲೇ ನಡೆಯಲಿರುವ ಕಾರ್ಯಕ್ರಮಗಳು</h3>
+                        <p class="feature-paragraph">
+                            <table width="100%" align="center">
+                                <tr>
+                                  <th colspan=2 text-align="center">ಗುಬ್ಬಿಯ ಕರಿಗಿರಪ್ಪನವರ ವಂಶಸ್ಥರ ಸಮಾವೇಶ</th>
+                                </tr>
+                                <tr>
+                                    <th>ಭಾನುವಾರ <br>22 ಮೇ 2016</th>
+                                    <th>ಸಂಘಟಕರು ಮತ್ತು ಇತರ ಆಸಕ್ತರು ದೇವರಾಯನದುರ್ಗದಲ್ಲಿ ಸೇರುವುದು </th>
+                                </tr>
+                                <tr>
+                                    <th>ಸೋಮವಾರ <br> 23 ಮೇ 2016</th>
+                                    <th>ಬೆಳಿಗ್ಗೆ 9.00: ವಂಶದವರೆಲ್ಲ ಈ ವೇಳೆಗೆ ದೇವರಾಯನದುರ್ಗವನ್ನು ತಲುಪಬೇಕು. <br><br>
+
+ಬೆಳಿಗ್ಗೆ 10.00: ದೇವಸ್ಥಾನದಲ್ಲಿ ಅಭಿಷೇಕ, ಪ್ರಾಕಾರೋತ್ಸವ <br><br>
+
+ಮಧ್ಯಾಹ್ನ 3.00 ರಿಂದ ಸಂಜೆ 7.00  ವರೆಗೆ: ವಂಶಸ್ಥರ ಸಮಾವೇಶ, ವಂಶದ ವಿವರಗಳ ಮಾಹಿತಿಯ ನೀಡಿಕೆ, ಪರಸ್ಪರ ಪರಿಚಯ, ವಿಚಾರ ವಿನಿಮಯ.<br></th>
+                                </tr>
+                                <tr>
+                                  <th colspan=2>ಸೂಚನೆ: ಸೋಮವಾರ ಬೆಳಿಗ್ಗೆ 7.00 ಗಂಟೆಗೆ ವಿಜಯನಗರದ ಮಾರುತಿ ಮಂದಿರದಿಂದ ಒಂದು ಬಸ್ಸನ್ನು ಹೊರಡಿಸಲಾಗುತ್ತದೆ. ಈ ಬಸ್ಸಿನಲ್ಲಿ ಬರಲು ಅಪೇಕ್ಷಿಸುವವರು ದಯವಿಟ್ಟು ಮುಂಚೆಯೇ ತಿಳಿಸಬೇಕಾಗಿ ವಿನಂತಿ. ಮಿಕ್ಕವರು ಅವರವರ ವ್ಯವಸ್ಥೆಯನ್ನು ಮಾಡಿಕೊಂಡು ದೇವರಾಯನಗುರ್ಗವನ್ನು ತಲುಪುವುದು.</th>
+                                </tr>
+                                <tr>
+                                  <th colspan=2 align="center"><a href="assets/dd-may22-23.pdf" rel="noopener noreferrer" target="_blank">Details of the upcoming get-together at Devarayanadurga</a> </th>
+                                </tr>
+                            </table>
+                        </p>
+                        
+                        <!-- End: Section content to edit -->
+                    </div>
+                    <!-- .col-sm-10 -->
+                </div>
+                <!-- .content-wrapper -->
+            </article>
+            <!-- .section-wrapper -->
+            <!-- ==================== END: SECTION TYPE: Text / Generic ==================== -->
+
+            <!-- ==================== SECTION TYPE: Text / Generic ==================== -->
+            <!-- This type of section should contain generic content (text, image, etc) -->
+            <!-- FOR EACH SECTION <article class="section-wrapper".. :
+             - remember to use a unique id, 
+             - (optional) set a "data-custom-background-img" attribute with a link to custom background image which will be used when the viewer scrolls to this section -->
+            <article id="contact" class="section-wrapper clearfix" data-custom-background-img="assets/images/other_images/bg6.jpg">
+                <div class="content-wrapper clearfix tacenter">
+                    <div class="col-sm-10 col-md-10 pull-right">
+                        <!-- Start: Section content to edit -->
+                        <h3 class="section-title">ಸಂಪರ್ಕ</h3>
+                        <!-- CONTACT DETAILS -->
+                        <div class="contact-details col-sm-12 col-md-12">
+                            <p>ನೀವು ಈ ವಂಶದ ಸದಸ್ಯರಾಗಿದ್ದಲ್ಲಿ ನಮ್ಮನ್ನು ಸಂಪರ್ಕಿಸಿ. If you are a member of this family get in touch with us: </p>
+                            <p>ಈ-ಮೇಲ್/E-mail: <a href='mailto:karigiri@kirankn.com'>karigiri@kirankn.com</a> </p>
+                            <p>ನಮ್ಮ  ಫೇಸ್‌ಬುಕ್ ಗ್ರೂಪ್ / Join our FB group: <a href='https://www.facebook.com/groups/karigiri.net/'>https://www.facebook.com/groups/karigiri.net/</a> </p>
+                            <p>ನಮ್ಮ ವಾಟ್ಸಾಪ್ಪ್ ಗ್ರೂಪ್ ಸೇರಲು ನಿಮ್ಮ ಫೋನ್ ನಂಬರ್ ಅನ್ನು ಈ-ಮೇಲ್ ಮಾಡಿರಿ. </p>
+                            <p>Join our Whatsapp group by sending us an email with your number </p>
+                            <br>
+                            <p>ಈ ವಂಶದ ಬಗ್ಗೆ ಮಾಹಿತಿಯನ್ನು ಕಳುಹಿಸಿ <br>(ಜನನ, ಮರಣ, ಮದುವೆ, ಇತರ ಸಮಾರಮ್ಭಗಳು, ನಿಮ್ಮಲ್ಲಿ ಇರುವ ಹಳೆ / ಹೊಸ ಫೋಟೋಗಳು ಇತ್ಯಾದಿ)</p>
+                            <p>Send us family updates - births/deaths/weddings/other events/photographs(old & new)/etc.</p>
+                        </div>
+                       
+                    </div>
+                    <!-- .col-sm-10 -->
+                </div>
+                <!-- .content-wrapper -->
+            </article>
+            <!-- .section-wrapper -->
+            <!-- ==================== END: SECTION TYPE: Text / Generic ==================== -->
+        </section>
+        <!-- #main-content -->
+        <!-- ==================== END: MAIN CONTENT ==================== -->
+        <!-- Footer -->
+        <section id="footer">
+            <!-- Go to Top -->
+            <div id="go-to-top" onclick="scroll_to_top();"><span class="icon glyphicon glyphicon-chevron-up"></span></div>
+            <!-- ==================================================================
+        SOCIAL ICONS
+        ==================================================================  -->
+            <!-- Each social icon item consists of the following:
+             - Link to the social page in href of <a>
+             - social icon in the <img> - a list of social icons options are found in the directory assets/images/theme_images/social_icons/ -->
+            <ul class="social-icons">
+                <li>
+                    <a href="http://facebook.com/groups/karigiri.net" target="_blank" title="Facebook"><img src="assets/images/theme_images/social_icons/facebook.png" alt="Facebook"></a>
+                </li>
+                <li>
+                    <a href="https://twitter.com/karigirinet" target="_blank" title="Twitter"><img src="assets/images/theme_images/social_icons/twitter.png" alt="Twitter"></a>
+                </li>
+                <li>
+                    <a href="https://plus.google.com/communities/103211913551817828822" target="_blank" title="Google+"><img src="assets/images/theme_images/social_icons/googleplus.png" alt="Google+"></a>
+                </li>
+            </ul>
+            <!-- ==================== END: Social Icons ==================== -->
+            <!-- copyright text -->
+            <div class="footer-text-line">&copy; 2016 karigiri.net</div>
+            <div class="footer-text-line kkn-footer">Some photos have been sourced from the internet. All rights rest with the respective owners.</div>
+        </section>
+        <!-- end: Footer -->
+    </div>
+    <!-- #outer-container -->
+    <!-- end: Outer Container -->
+    <!-- Modal -->
+    <!-- DO NOT MOVE, EDIT OR REMOVE - this is needed in order for popup content to be populated in it -->
+    <div class="modal fade" id="common-modal" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <div class="modal-body">
+                </div>
+                <!-- .modal-body -->
+            </div>
+            <!-- .modal-content -->
+        </div>
+        <!-- .modal-dialog -->
+    </div>
+    <!-- .modal -->
+    <!-- Javascripts
+    ================================================== -->
+    <!-- Jquery and Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <!-- Easing - for transitions and effects -->
+    <script src="assets/js/jquery.easing.1.3.js"></script>
+    <!-- background image strech script -->
+    <script src="assets/js/jquery.backstretch.min.js"></script>
+    <!-- background image fix for IE 9 or less
+       - use same background as set above to <body> -->
+    <!--[if lt IE 9]>
+    <script type="text/javascript">
+    $(document).ready(function(){
+      jQuery("#outer-background-container").backstretch("assets/images/other_images/bg5.jpg");
+    });
+    </script> 
+    <![endif]-->
+    <!-- detect mobile browsers -->
+    <script src="assets/js/detectmobilebrowser.js"></script>
+    <!-- owl carousel js -->
+    <script src="assets/js/owl-carousel/owl.carousel.min.js"></script>
+    <!-- Custom functions for this theme -->
+    <script src="assets/js/functions.js"></script>
+    <script src="assets/js/initialise-functions.js"></script>
+    <!-- IE9 form fields placeholder fix -->
+    <!--[if lt IE 9]>
+    <script>contact_form_IE9_placeholder_fix();</script>
+    <![endif]-->
+</body>
+
+</html>
